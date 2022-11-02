@@ -1,0 +1,96 @@
+*{padding:0;
+  margin:0;
+  font-family: Poppins;}
+  body{display:block;
+      perspective:1000px;}
+  .nav{display:flex;
+       justify-content: space-around;
+       align-items: center;
+       height:20vh;
+       background-color: black;
+       color:white;
+       }
+  .nav a{text-decoration: none;
+         color:white;}
+.section{display: flex;
+         justify-content: space-around;
+
+         height:100vh;
+         width:100%;}
+.container{
+    width:45%;
+    height:90vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   }
+.card{width:80%;
+      height:80vh;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      transform-style: preserve-3d;
+      justify-content: space-around;
+      box-shadow: 0 20px 20px rgba(0,0,0,0.2),0 0 50px rgba(0,0,0,0.1);
+      border-radius: 2rem;
+
+    }
+.image img{width:15rem;
+          height:18rem;
+          transition: transform 0.25s ease;
+          }
+
+
+#blueberry img{width:18rem;
+               height:18rem;
+               transition: transform 0.25s ease;
+             }
+#raspberry img{width:13rem;
+               height:18rem;
+               transition: transform 0.25s ease;
+             }
+#grapes img{width:12rem;
+            height:18rem;
+            transition: transform 0.25s ease;
+          }
+.image{position: relative;}
+
+
+.info h2{
+  transition: transform 0.25s ease;
+}
+.circle{position: absolute;
+        width:17rem;
+        height:17rem;
+        border-radius: 50%;
+        background:linear-gradient(to right bottom,#FFF9B2,#FFB085);
+        top:1rem;
+
+        z-index: -1;
+        }
+
+button{border-style: none;
+       text-decoration: none;
+       background:none;
+       width: 4rem;
+       height:3rem;
+       border-radius: 2rem;
+       box-shadow:0 5px 5px rgba(0,0,0,0.1);
+       }
+button:hover{background:rgba(0,0,0,0.05);
+             cursor:pointer;
+             }
+.info{display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      }
+.quantity{margin-top: 1rem;
+          margin-bottom: 1rem;}
+.purchase{width:8rem;
+          background-color: rgba(0,0,0,0.05);
+          border-radius: 2rem;
+          height:3rem;
+          }
+.purchase:hover{background-color: white;
+                }
